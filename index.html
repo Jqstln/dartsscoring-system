@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Darts Scoring</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Darts Scoring</h1><br><br>
+        <form id="darts-form">
+            <div class="modal" id="winner-modal">
+                <div class="modal-content">
+                    <p id="winner-message"></p>
+                    <button id="close-modal">Close</button>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-3">
+                    <div class="form-group text-center my-0">
+                      <label for="player1-input" id="player-text">Player 1</label>
+                    </div>
+                    <div class="form-group d-flex flex-column">
+                      <input type="number" class="form-control form-control-sm mx-auto" id="player1-input">
+                      <button type="button" class="btn btn-secondary btn-m mx-auto my-2" onclick="submitScore(1)">Submit</button>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group text-center my-0">
+                      <label for="player2-input" id="player-text">Player 2</label>
+                    </div>
+                    <div class="form-group d-flex flex-column">
+                      <input type="number" class="form-control form-control-sm mx-auto" id="player2-input">
+                      <button type="button" class="btn btn-secondary btn-m mx-auto my-2" onclick="submitScore(2)">Submit</button>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group text-center my-0">
+                      <label for="player3-input" id="player-text">Player 3</label>
+                    </div>
+                    <div class="form-group d-flex flex-column">
+                      <input type="number" class="form-control form-control-sm mx-auto" id="player3-input">
+                      <button type="button" class="btn btn-secondary btn-m mx-auto my-2" onclick="submitScore(3)">Submit</button>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="form-group text-center my-0">
+                      <label for="player4-input" id="player-text">Player 4</label>
+                    </div>
+                    <div class="form-group d-flex flex-column">
+                      <input type="number" class="form-control form-control-sm mx-auto" id="player4-input">
+                      <button type="button" class="btn btn-secondary btn-m mx-auto my-2" onclick="submitScore(4)">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </form><br>
+        <div class="row">
+            <div class="col-3">
+                <h2>Player 1</h2>
+                <p id="player1-score" class="text-center"></p>
+            </div>
+            <div class="col-3">
+                <h2>Player 2</h2>
+                <p id="player2-score" class="text-center"></p>
+            </div>
+            <div class="col-3">
+                <h2>Player 3</h2>
+                <p id="player3-score" class="text-center"></p>
+            </div>
+            <div class="col-3">
+                <h2>Player 4</h2>
+                <p id="player4-score" class="text-center"></p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

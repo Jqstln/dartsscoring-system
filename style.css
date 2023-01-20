@@ -1,0 +1,81 @@
+body {
+    background-color: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* FORMS */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    width: 50%;
+    display: inline-block;
+}
+
+.form-control {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.5rem;
+}
+
+/* OTHER */
+
+label {
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+#player-text {
+    font-size: large;
+    font-weight: bolder;
+}
+
+.center-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* BOX */
+.modal {
+ /* hidden by default */
+    position: fixed; /* stay in place */
+    z-index: 1; /* sit on top */
+    padding-top: 100px; /* location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* full width */
+    height: 100%; /* full height */
+    overflow: auto; /* enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+}
+
+#close-modal {
+    border-radius: 5px;
+    margin: auto;
+    width: 20%;
+}
+
+#winner-message {
+    text-align: center;
+}
