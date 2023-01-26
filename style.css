@@ -41,6 +41,13 @@ input {
     font-weight: bolder;
 }
 
+#player1-score,
+#player2-score,
+#player3-score,
+#player4-score {
+    font-weight: bold;
+}
+
 .center-button {
     display: block;
     margin-left: auto;
